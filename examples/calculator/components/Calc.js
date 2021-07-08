@@ -6,7 +6,6 @@ import Screen from "./Screen.js";
 
 const Calc = (props, state, setState) => {
   const { screenValue = 0 } = state;
-  //const [ screenValue, changeValue ] = useState(0);
 
   const calculate = () => {
     /* 
@@ -19,13 +18,12 @@ const Calc = (props, state, setState) => {
     if (isNaN(res)) {                                                                         res = 0;
     }
     setState({ screenValue: res })
-    //changeValue(res);
   }
 
   const buttonCallback = evnt => {
     const buttonValue = evnt.target.innerText;
     switch(buttonValue) {                                                                     case "C":
-        changeValue("cleared.");
+        setState({ screenValue: "cleared."})
       break;
 
       case "=":
@@ -36,14 +34,11 @@ const Calc = (props, state, setState) => {
         // eslint-disable-next-line
         if (screenValue != 0) {
           if(/c/g.test(screenValue)) {
-            //changeValue(buttonValue);
 	    setState({ screenValue: buttonValue });
           } else {
-            //changeValue(screenValue + buttonValue);
 	    setState({ screenValue: screenValue + buttonValue });
           }
         } else {
-          //changeValue(buttonValue);
           setState({ screenValue: buttonValue });
         }
     }
