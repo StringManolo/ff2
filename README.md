@@ -1,11 +1,12 @@
 # Fast Framework 2.0.0
 
 #### Description:
-+ Fast Framework 2 is a small and simple ES6 framework designed for small projects where a full blown framework like React may take some time to install, build, run, manage dependencies...
++ Fast Framework 2 is a small and simple framework designed for small projects where a full blown framework like React may take some time to install, build, run, manage dependencies...
 
 #### Features:
 + React Like Components
 + JSX like sintax [htm](https://github.com/developit/htm) without preprocesors
++ JSX using typescript compiler
 + Shortcuts
 + Cache API
 + Router
@@ -25,4 +26,4 @@
 Apache 2.0
 
 #### Notice:
-This framework include [htm](https://github.com/developit/htm) and [dotdom](https://github.com/wavesoft/dot-dom) third party libraries code.
+This framework include [htm](https://github.com/developit/htm), [dotdom](https://github.com/wavesoft/dot-dom) and [tsc](https://github.com/microsoft/TypeScript/blob/main/bin/tsc) third party code.
