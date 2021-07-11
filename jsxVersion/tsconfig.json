@@ -1,0 +1,15 @@
+/* Compile JSX to JS */
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "es6",
+    "allowJs": true,
+    "jsx": "react",
+    "reactNamespace": "ff",
+    "rootDir": "./dev",
+    "outDir": "./compiled",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
